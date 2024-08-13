@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(55, 26, 26);
+}
+.travis{
+background-color: rgb(55, 26, 26);
+color: aliceblue;
+text-align: center;
+padding: 2%;
+
+}
+
+img{
+    width: 100%;
+    border-radius: 4px;
+margin-bottom: 10px;
+aspect-ratio: 1/1;
+object-fit: cover;
+transition: scale 350ms ease, opacity 350ms linear;
+}
+
+.gallery:has(img:hover) img:not(:hover){
+    scale: .9;
+    opacity: .7;
+}
+
+
+section{
+column-count: 3;
+column-gap: 10px;
+}
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
